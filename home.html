@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de devises</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertisseur de devises</h1>
+        <div class="converter-form">
+            <label for="amount">Montant :</label>
+            <input type="number" id="amount" placeholder="Entrer un montant" required>
+            
+            <label for="from-currency">De :</label>
+            <select id="from-currency">
+                <option value="USD">Dollar US (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Livre Sterling (GBP)</option>
+                <option value="JPY">Yen Japonais (JPY)</option>
+                <option value="AUD">Dollar Australien (AUD)</option>
+                <option value="CAD">Dollar Canadien (CAD)</option>
+                <option value="CHF">Franc Suisse (CHF)</option>
+                <option value="CNY">Yuan Chinois (CNY)</option>
+                <option value="HKD">Dollar de Hong Kong (HKD)</option>
+                <option value="NZD">Dollar Néo-Zélandais (NZD)</option>
+                <option value="SEK">Couronne Suédoise (SEK)</option>
+                <option value="KRW">Won Sud-Coréen (KRW)</option>
+                <option value="SGD">Dollar de Singapour (SGD)</option>
+                <option value="NOK">Couronne Norvégienne (NOK)</option>
+                <option value="MXN">Peso Mexicain (MXN)</option>
+                <option value="INR">Roupie Indienne (INR)</option>
+                <option value="RUB">Rouble Russe (RUB)</option>
+                <option value="ZAR">Rand Sud-Africain (ZAR)</option>
+                <option value="BRL">Réal Brésilien (BRL)</option>
+                <option value="TRY">Livre Turque (TRY)</option>
+                <option value="ILS">Shekel Israélien (ILS)</option>
+                <option value="PHP">Peso Philippin (PHP)</option>
+                <option value="PLN">Zloty Polonais (PLN)</option>
+                <option value="THB">Baht Thaïlandais (THB)</option>
+                <option value="MYR">Ringgit Malaisien (MYR)</option>
+            </select>
+
+            <label for="to-currency">À :</label>
+            <select id="to-currency">
+                <option value="USD">Dollar US (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Livre Sterling (GBP)</option>
+                <option value="JPY">Yen Japonais (JPY)</option>
+                <option value="AUD">Dollar Australien (AUD)</option>
+                <option value="CAD">Dollar Canadien (CAD)</option>
+                <option value="CHF">Franc Suisse (CHF)</option>
+                <option value="CNY">Yuan Chinois (CNY)</option>
+                <option value="HKD">Dollar de Hong Kong (HKD)</option>
+                <option value="NZD">Dollar Néo-Zélandais (NZD)</option>
+                <option value="SEK">Couronne Suédoise (SEK)</option>
+                <option value="KRW">Won Sud-Coréen (KRW)</option>
+                <option value="SGD">Dollar de Singapour (SGD)</option>
+                <option value="NOK">Couronne Norvégienne (NOK)</option>
+                <option value="MXN">Peso Mexicain (MXN)</option>
+                <option value="INR">Roupie Indienne (INR)</option>
+                <option value="RUB">Rouble Russe (RUB)</option>
+                <option value="ZAR">Rand Sud-Africain (ZAR)</option>
+                <option value="BRL">Réal Brésilien (BRL)</option>
+                <option value="TRY">Livre Turque (TRY)</option>
+                <option value="ILS">Shekel Israélien (ILS)</option>
+                <option value="PHP">Peso Philippin (PHP)</option>
+                <option value="PLN">Zloty Polonais (PLN)</option>
+                <option value="THB">Baht Thaïlandais (THB)</option>
+                <option value="MYR">Ringgit Malaisien (MYR)</option>
+            </select>
+
+            <button id="convert-btn">Convertir</button>
+        </div>
+
+        <div id="result" class="result">
+        </div>
+    </div>
+
+    <script src="convertisseur.js"></script>
+</body>
+</html>
